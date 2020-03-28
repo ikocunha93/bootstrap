@@ -27,7 +27,9 @@ You can also invert the colors—with light text on dark backgrounds—with `.ta
 Use `.table-striped` to add zebra-striping to any table row within the `<tbody>`.
 
 {{< table class="table table-striped" >}}
+
 {{< table class="table table-dark table-striped" >}}
+
 {{< table class="table table-success table-striped" >}}
 
 ### Bordered
@@ -39,6 +41,7 @@ Add `.table-bordered` for borders on all sides of the table and cells.
 [Border color utilities]({{< docsref "/utilities/borders#border-color" >}}) can be added to change colors:
 
 {{< table class="table table-bordered border-primary" >}}
+
 {{< table class="table table-dark table-bordered" >}}
 
 ### No borders
@@ -46,6 +49,7 @@ Add `.table-bordered` for borders on all sides of the table and cells.
 Add `.table-borderless` for a table without borders.
 
 {{< table class="table table-borderless" >}}
+
 {{< table class="table table-dark table-borderless" >}}
 
 ### Hoverable rows
@@ -53,6 +57,7 @@ Add `.table-borderless` for a table without borders.
 Add `.table-hover` to enable a hover state on table rows within a `<tbody>`.
 
 {{< table class="table table-hover" >}}
+
 {{< table class="table table-dark table-hover" >}}
 
 ### Small tables
@@ -60,6 +65,7 @@ Add `.table-hover` to enable a hover state on table rows within a `<tbody>`.
 Add `.table-sm` to make any `.table` more compact by cutting all cell `padding` in half.
 
 {{< table class="table table-sm" >}}
+
 {{< table class="table table-dark table-sm" >}}
 
 ## Vertical alignment
