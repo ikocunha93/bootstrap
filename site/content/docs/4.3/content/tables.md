@@ -40,6 +40,7 @@ Add `.table-bordered` for borders on all sides of the table and cells.
 
 {{< table class="table table-bordered border-primary" >}}
 {{< table class="table table-dark table-bordered" >}}
+
 ### No borders
 
 Add `.table-borderless` for a table without borders.
