@@ -6,15 +6,18 @@
     simplified: show a simplified version in the examples - default `true`
 */ -}}
 
-{{ $table_attributes := "" }}
-{{ if .Get "class" }}
-  {{ $table_attributes = printf ` class="%s"` (.Get "class") }}
-{{ end }}
+{{- $simplified := .Get "simplified" | default true -}}
 
-{{ $table_content := "  ...\n" }}
-{{ if (eq (.Get "simplified") "false") }}
-  {{ $table_content = partialCached "table-content" . }}
-{{ end }}
+{{- $table_attributes := "" -}}
+{{- $table_content := "  ...\n" -}}
+
+{{- with .Get "class" -}}
+  {{- $table_attributes = printf ` class="%s"` . -}}
+{{- end -}}
+
+{{- if eq $simplified false -}}
+  {{- $table_content = partialCached "table-content" . -}}
+{{- end -}}
 
 {{- $table := printf "<table%s>\n%s</table>" $table_attributes $table_content -}}
 
